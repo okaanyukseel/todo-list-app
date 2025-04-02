@@ -35,15 +35,17 @@ Bu proje, kullanıcıların günlük görevlerini ekleyip takip edebileceği bas
 
 ### Frontend
 
-
+1. Frontend klasörüne gidin:
+   ```
+   cd C:\Users\okaan\CascadeProjects\todo-list-app\frontend
    ```
 
-1. Gerekli paketleri yükleyin:
+2. Gerekli paketleri yükleyin:
    ```
    npm install
    ```
 
-2. Uygulamayı başlatın:
+3. Uygulamayı başlatın:
    ```
    npm start
    ```
@@ -68,13 +70,3 @@ Bu proje, kullanıcıların günlük görevlerini ekleyip takip edebileceği bas
 - Duyarlı tasarım (Responsive Design)
 - Kullanıcı dostu arayüz
 - Veritabanı entegrasyonu
-
-## H2 Veritabanı Konsolu
-
-H2 veritabanı konsoluna erişmek için:
-
-1. Backend uygulamasını çalıştırın
-2. Tarayıcınızda http://localhost:8080/h2-console adresine gidin
-3. JDBC URL: `jdbc:h2:mem:tododb`
-4. Kullanıcı adı: `sa`
-5. Şifre: `password`
