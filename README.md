@@ -35,17 +35,15 @@ Bu proje, kullanıcıların günlük görevlerini ekleyip takip edebileceği bas
 
 ### Frontend
 
-1. Frontend klasörüne gidin:
-   ```
-   cd C:\Users\okaan\CascadeProjects\todo-list-app\frontend
+
    ```
 
-2. Gerekli paketleri yükleyin:
+1. Gerekli paketleri yükleyin:
    ```
    npm install
    ```
 
-3. Uygulamayı başlatın:
+2. Uygulamayı başlatın:
    ```
    npm start
    ```

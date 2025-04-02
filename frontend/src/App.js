@@ -95,20 +95,24 @@ function App() {
   };
 
   return (
-    <Container className="py-5">
-      <Row className="justify-content-center mb-5">
-        <Col md={8} lg={6}>
-          <h1 className="text-center mb-4">Yapılacaklar Listesi</h1>
-          <TodoForm addTodo={addTodo} />
-          {error && <div className="alert alert-danger mt-3">{error}</div>}
-          <TodoFilter filter={filter} onFilterChange={handleFilterChange} />
-          <TodoList 
-            todos={filteredTodos} 
-            toggleTodo={toggleTodo} 
-            deleteTodo={deleteTodo} 
-            updateTodo={updateTodo}
-            loading={loading} 
-          />
+    <Container className="app-container">
+      <Row className="justify-content-center">
+        <Col md={10} lg={8} xl={7}>
+          <div className="card shadow-lg">
+            <div className="card-body">
+              <h1 className="app-title">Yapılacaklar Listesi</h1>
+              <TodoForm addTodo={addTodo} />
+              {error && <div className="alert alert-danger mt-3">{error}</div>}
+              <TodoFilter filter={filter} onFilterChange={handleFilterChange} />
+              <TodoList 
+                todos={filteredTodos} 
+                toggleTodo={toggleTodo} 
+                deleteTodo={deleteTodo} 
+                updateTodo={updateTodo}
+                loading={loading} 
+              />
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
