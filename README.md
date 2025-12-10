@@ -1,4 +1,4 @@
-# Todo List Uygulaması
+# To-do List App
 
 Bu proje, kullanıcıların günlük görevlerini ekleyip takip edebileceği basit ve kullanıcı dostu bir To-Do List uygulamasıdır. Uygulama üzerinden kullanıcılar görev ekleyebilir, düzenleyebilir, tamamlandığında işaretleyebilir veya silebilir. Ayrıca görevleri filtreleyerek tamamlanan veya tamamlanmayan görevleri ayrı ayrı görebilir.
 
