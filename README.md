@@ -35,3 +35,41 @@ Bu proje, kullanıcıların günlük görevlerini ekleyip takip edebileceği bas
 - Duyarlı tasarım (Responsive Design)
 - Kullanıcı dostu arayüz
 - Veritabanı entegrasyonu
+
+## Kurulum ve Çalıştırma
+
+Gereksinimler: Java 11+, Maven, Node.js ve npm.
+
+### Backend
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+API `http://localhost:8080/api/todos` adresinde çalışır. Veritabanı bellek içi H2'dir (`jdbc:h2:mem:tododb`), bu yüzden uygulama yeniden başlatıldığında veriler sıfırlanır. H2 konsolu: `http://localhost:8080/h2-console`.
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Arayüz `http://localhost:3000` adresinde açılır. Backend, CORS ayarında yalnızca bu adrese izin verir.
+
+## Proje Yapısı
+
+```
+backend/
+  src/main/java/com/example/todolist/
+    controller/TodoController.java   # REST uç noktaları
+    service/TodoService.java         # İş mantığı
+    repository/TodoRepository.java   # Spring Data JPA
+    model/Todo.java                  # Entity
+  src/main/resources/application.properties
+frontend/
+  src/components/                    # TodoForm, TodoList, TodoItem, TodoFilter
+  src/services/TodoService.js        # Axios ile API çağrıları
+```
